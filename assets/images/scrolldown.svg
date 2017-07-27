@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7701 898 108 83.924">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.2px;
+      }
+
+      .cls-2 {
+        fill: #4e4e4e;
+        font-size: 20px;
+        font-family: Avenir-Roman, Avenir;
+      }
+    </style>
+  </defs>
+  <g id="Group_30" data-name="Group 30" transform="translate(7465)">
+    <line id="Line_26" data-name="Line 26" class="cls-1" y2="43" transform="translate(288.5 938.5)"/>
+    <text id="Scroll_Down" data-name="Scroll Down" class="cls-2" transform="translate(236 918)"><tspan x="0" y="0">Scroll Down</tspan></text>
+    <line id="Line_27" data-name="Line 27" class="cls-1" x1="8" y1="8" transform="translate(280.5 973.5)"/>
+    <line id="Line_28" data-name="Line 28" class="cls-1" y1="8" x2="8" transform="translate(288.5 973.5)"/>
+  </g>
+</svg>
