@@ -7,10 +7,15 @@
 
 }
 
+a:link {
+  color: black;
+}
+
 @fontface {
   font-family: 'Avenir';
   src: url("assets/fonts/Avenir.ttc");
 }
+
 
 
 html {
@@ -24,7 +29,7 @@ body {
 .left {
   position: absolute;
   background: white;
-  width: 50vw !important;
+  width: 50vw;
   overflow-x: visible;
   height: 100vh;
   max-height: 1600px;
@@ -81,11 +86,12 @@ a:visited {
 
 #nav-link {
   position: relative;
-  transition: 0.4s ease-in-out;
+  transition: 1s ease-in-out;
+  padding-bottom: 4px;
 }
 
 #nav-link:hover {
-
+  border-bottom: 1px solid black;
 }
 
 
@@ -102,6 +108,11 @@ a:visited {
   background: #4e4e4e;
   color: white;
 
+}
+
+
+.mobile-nav {
+  display: none;
 }
 
 
@@ -125,10 +136,6 @@ a:visited {
   top: 12px;
 }
 
-.btn:hover {
-  text-decoration: none;
-  letter-spacing: 0.5px;
-}
 
 .btn-1 {
   background: none;
@@ -163,8 +170,8 @@ a:visited {
 
 
 .header-text h1 {
-  padding-top: 6em;
-  font-size: 25pt;
+  padding-top: 4.4em;
+  font-size: 28pt;
   padding-bottom: 1em;
   font-weight: 500;
   color: #4e4e4e;
@@ -181,7 +188,8 @@ a:visited {
 
 .header-text p {
   width: 450px;
-  line-height: 2;
+  font-size: 11.5pt;
+  line-height: 2.4;
   padding-top: 2em;
 }
 
@@ -218,7 +226,7 @@ a:visited {
   padding-top: 2em;
   position: relative;
   display: block;
-  height: 950px;
+  height: 750px;
 }
 
 .design-body img {
@@ -248,9 +256,9 @@ a:visited {
 .design-content p {
   text-align: right;
   float: right;
-  line-height: 2;
+  line-height: 2.4;
   padding-top: 2em;
-  font-size: 10.7pt;
+  font-size: 11.5pt;
   width: 500px;
 }
 
@@ -258,11 +266,6 @@ a:visited {
   float: right;
   margin-top: 2em;
   padding: 0.5em 2em;
-  transition: 0.6s ease-in-out;
-}
-
-.design-content a:hover {
-  letter-spacing: 0.5px;
 }
 
 .design-content svg {
@@ -339,9 +342,9 @@ a:visited {
 }
 
 .text-tile p {
-  font-size: 11pt;
+  font-size: 11.5pt;
   padding-top: 2em;
-  line-height: 2;
+  line-height: 2.4;
   width: 500px;
   padding-bottom: 2em;
 }
@@ -354,9 +357,6 @@ a:visited {
   transition: 0.6s ease-in-out;
 }
 
-.text-tile a:hover {
-  letter-spacing: 0.5px;
-}
 
 .text-tile svg {
   height: 4em;
@@ -370,8 +370,8 @@ a:visited {
   width: 500px;
   height: 300px;
   position: absolute;
-  margin-left: -90px;
-  margin-top: 60px;
+  margin-left: -60px;
+  margin-top: 90px;
 
 }
 
@@ -387,7 +387,7 @@ a:visited {
 
 .why-body {
   position: relative;
-  top: 180px;
+  top: 140px;
   display: block;
   padding-top: 11em;
 }
@@ -477,7 +477,7 @@ a:visited {
 
 .tile-container h2 {
   font-weight: 500;
-  font-size: 13pt;
+  font-size: 15pt;
   color: #4e4e4e;
 }
 
@@ -490,7 +490,7 @@ a:visited {
 .projects {
   display: block;
   position: relative;
-  top: 500px;
+  top: 350px;
   height: 1375px;
   overflow: hidden;
 
@@ -506,14 +506,16 @@ a:visited {
 #secondslice {
   position: absolute;
   width: 31vw;
+  visibility: hidden;
   right: -10%;
 }
 
 #appmockup {
-  width: 40vw;
+  width: 70vw;
+  left: -20vw;
   position: absolute;
   z-index: 1000 !important;
-  padding-top: 5em;
+  padding-top: 1em;
 
 }
 
@@ -522,7 +524,7 @@ a:visited {
   font-size: 120pt;
   font-weight: 600;
   color: rgba(0,0,0,0.08);
-  padding-bottom: 50px;
+
 }
 
 .mockup-text {
@@ -531,7 +533,7 @@ a:visited {
   height: 100%;
   float: right;
   vertical-align: middle;
-  padding-top: 32%;
+  padding-top: 13%;
 
 }
 
@@ -546,10 +548,10 @@ a:visited {
 .mockup-text p {
   text-align: right;
   float: right;
-  line-height: 2;
+  line-height: 2.4;
   padding-top: 2em;
-  font-size: 13pt;
-  width: 700px;
+  font-size: 11.5pt;
+  width: 600px;
 }
 
 .mockup-text hr {
@@ -568,9 +570,6 @@ a:visited {
   transition: 0.6s ease-in-out;
 }
 
-.mockup-text a:hover {
-  letter-spacing: 0.5px;
-}
 
 .mockup-text svg {
   height: 4em;
@@ -579,8 +578,9 @@ a:visited {
 .team {
   display: block;
   position: relative;
-  top: 800px;
+
 }
+
 
 .philosophy {
   text-align: center;
@@ -659,6 +659,8 @@ a:visited {
   margin-top: 3em;
   background-image: url('assets/images/tommi.jpg');
   z-index: 10000;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tommi h3 {
@@ -676,13 +678,13 @@ a:visited {
 
 
 footer {
-  height: 500px;
+  height: 400px;
   width: 100%;
   display: block;
   box-shadow: 0px 8px 40px rgba(0,0,0,0.16);
   clear: both;
   position: relative;
-  top: 1050px;
+  top: 200px;
 }
 
 .footer-left {
@@ -695,7 +697,7 @@ footer {
 .footer-right {
   display: inline-block;
   background: linear-gradient(140deg, #00EBFF, #8900FF);
-  width: 50vw;
+  width: 49vw;
   height: 100%;
   float: right;
 }
@@ -703,11 +705,11 @@ footer {
 .footer-right h1 {
   margin: auto;
   display: block;
-  margin-top: 14%;
+  margin-top: 26%;
   color: white;
   font-weight: 200;
   text-align: center;
-  font-size: 23pt;
+  font-size: 17pt;
 }
 
 .footer-right a {
@@ -725,13 +727,14 @@ footer {
 footer img {
   width: 35px;
   position: relative;
-  top: -3em;
+  top: -1.3em;
   margin-left: -10em;
 }
 
 footer ul {
   padding-left: 10em;
-  padding-top: 5em;
+  padding-top: 2.3em;
+  overflow: hidden;
 
 }
 
@@ -747,6 +750,7 @@ footer li {
 .slideout:hover {
   padding-left: 10px;
   font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 #copyright {
@@ -756,7 +760,109 @@ footer li {
 
 
 
-@media screen and (max-height: 1440px) {
+@media screen and (max-width: 1000px) {
+
+  body {
+    overflow: hidden !important;
+  }
+
+  .nav {
+    display: none;
+  }
+
+
+  .mobile-nav {
+    display: block;
+    margin-top: 9em;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .burger {
+    width: 70px;
+    display: inline-block;
+    height: 70px;
+    float: right;
+    
+  }
+
+
+
+  #top {
+    width: 100%;
+    background: #4e4e4e;
+    height: 6px;
+
+  }
+
+  #bottom {
+    width: 100%;
+    background: #4e4e4e;
+    margin-top: 2em;
+    height: 6px;
+
+  }
+
+
+
+
+
+  
+
+  #logo {
+    font-size: 40pt;
+    position: absolute;
+  }
+
+  #carousel {
+    display: none;
+  }
+
+  .header-container {
+    display: block;
+    margin: auto;
+    width: 70vw;
+    height: 100vh;
+    
+  }
+
+  .header-text h1 {
+    font-size: 50pt;
+    margin-top: 0.5em;
+  }
+
+  .header-text hr {
+    width: 300px;
+    margin-bottom: 2em;
+  }
+
+  .header-text p {
+    font-size: 25pt;
+    width: 100%;
+  }
+
+  #scrolldown {
+    width: 200px;
+    margin-top: 90px;
+  }
+
+  .left {
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.16);
+  }
+
+  .right {
+    display: none;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1800px) {
 
   .header-container {
     height: 1000px;
@@ -782,4 +888,33 @@ footer li {
 
   .design-body {
     top: 100px;
+    height: 850px;
   }
+
+  #secondslice {
+    visibility: visible;
+  }
+
+  #appmockup {
+    width: 35vw;
+    left: 0;
+  }
+
+  .team {
+    top: 600px;
+  }
+
+  .mockup-text {
+    padding-top: 32%;
+  }
+
+  footer {
+    top: 800px;
+  }
+
+
+  .footer-right h1 {
+    font-size: 23pt;
+    margin-top: 11.5%;
+  }
+}
