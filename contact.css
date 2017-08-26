@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', sans-serif;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+  
+  }
+
+  input::-webkit-input-placeholder {
+      color: #4e4e4e;
+  }
+  
+  a:link {
+    color: black;
+  }
+  
+  @fontface {
+    font-family: 'Avenir';
+    src: url("assets/fonts/Avenir.ttc");
+  }
+  
+  
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    height: auto;
+  }
+  
+  .left {
+    position: absolute;
+    background: white;
+    width: 50vw;
+    overflow-x: visible;
+    height: 100vh;
+    max-height: 1600px;
+    left: 0;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.17);
+    z-index: -10;
+  
+  }
+  
+  .right {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(140deg, #00EBFF, #8900FF);
+    width: 50vw;
+    height: 100vh;
+    max-height: 1600px;
+  
+  }
+  
+  .header-container {
+    width: 1170px;
+    height: 100vh;
+    max-height: 1600px;
+    margin: auto;
+  }
+  
+  .container {
+    width: 1170px;
+    height: auto;
+    margin: auto;
+  }
+  
+  .nav {
+    padding-top: 4.3em;
+  }
+  
+  #logo {
+    font-weight: 600;
+    font-size: 15pt;
+    color: #4e4e4e;
+  }
+  
+  .nav li {
+    display: inline-block;
+    padding-right: 4.6em;
+    font-size: 11pt;
+    color: black;
+  }
+  
+  
+  a:visited {
+      color: black;
+  }
+  
+  #nav-link {
+    position: relative;
+    transition: 1s ease-in-out;
+    padding-bottom: 4px;
+  }
+  
+  #nav-link:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  
+  .nav button {
+    border: 1px solid rgba(0,0,0,0.6);
+    padding: 1em 2.6em;
+    font-size: 11pt;
+    background: transparent;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  .nav button:hover {
+    background: #4e4e4e;
+    color: white;
+  
+  }
+  
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  
+  
+  /* SASS */
+  
+  .btn {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    position: relative;
+    transition: 0.6s ease-in-out;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+    top: 12px;
+  }
+  
+  
+  .btn-1 {
+    background: none;
+    font-weight: 100;
+    text-align: center;
+    transition: 0.6s ease-in-out;
+  }
+  .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .btn-1 rect {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.3;
+    stroke-dasharray: 422, 0;
+  }
+  
+  .btn-1:hover {
+    background: rgba(255, 255, 255, 0);
+  
+  }
+  .btn-1:hover rect {
+    stroke-width: 1.3;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  #slice {
+    position: absolute !important;
+    width: auto;
+    top: 0;
+    right: -15vw;;
+    height: 100vh;
+    display: inline-block;
+    
+
+  }
+  
+  .form {
+    position: absolute;
+    top: 23vh;
+  }
+
+  .form h1 {
+    padding-top: 4.4em;
+    font-size: 28pt;
+    padding-bottom: 1em;
+    font-weight: 400;
+    display: inline-block;
+    color: #4e4e4e;
+    animation: panin 1.5s ease-in-out;
+    animation-delay: 0.2s;
+  }
+  
+
+  .line-input {
+      width: 400px;
+      font-size: 30pt;
+      font-weight: 500;
+      display: inline-block;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #4e4e4e;
+      padding-bottom: 3px;
+      margin-left: 20px;
+      color: #4e4e4e;
+      margin-bottom: 1em;
+      animation: panin 1.5s ease-in-out;
+      animation-delay: 0.2s;
+  }
+
+  .line-input:focus, .line-input:active {
+      outline: none;
+  }
+
+    form img {
+        width: 12px;
+        display: inline-block;
+        position: relative;
+        top: 2.5px;
+        padding-left: 10px;
+    }
+
+    .input-services {
+        display: none;
+        margin-bottom: 1em;
+    }
+
+    input[type=checkbox] {
+        visibility: hidden;
+    }
+
+    #website:checked + label {
+        border: 2.5px solid #4e4e4e; 
+    }
+
+    #app:checked + label {
+        border: 2.5px solid #4e4e4e;
+    }
+
+    #app {
+        margin-left: -1em;
+    }
+
+    label {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #4e4e4e;
+        padding: 0.8em 2.5em;
+        margin-left: 2em;
+    }
+
+    #next2 {
+        display: none;
+    }
+
+
+    #next3 {
+        display: none;
+    }
+
+    #next4 {
+        display: none;
+    }
+
+
+    .input-budget {
+        display: none;
+        margin-bottom: 1em;
+    }
+
+    .controls button {
+        border: none;
+    }
+
+    #null-prompt {
+        color: #4e4e4e;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 2em;
+        display: none;
+    }
+   
+    #unchecked-prompt {
+        color: #4e4e4e;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 2em;
+        display: none;
+    }
+
+    #optional-prompt {
+        color: #4e4e4e;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 2em;
+        display: none;
+    }
+
+    #empty-prompt {
+        color: #4e4e4e;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 2em;
+        display: none;
+    }
+
+    .input-email {
+        display: none;
+        width: 1200px !important;
+        margin-bottom: 1em;
+    }
+
+    #email {
+        width: 480px;
+        margin-bottom: 2em;
+    }
+
+    .input-budget {
+        display: none;
+        margin-bottom: 1em;
+    }
+
+    .input-message {
+        margin-top: -7em;
+        display: none;
+    }
+
+    #message {
+        margin-left: 0;
+        width: 500px;
+        display: block;
+        font-size: 20pt;
+        height: 200px;
+        margin-bottom: 1em;
+    }
+
+    #next5 {
+       display: none; 
+    }
+    
+
+    .sent {
+        width: 1170px;
+        display: none;
+        height: 500px;
+        margin: auto;
+    }
+
+    .sent h1 {
+        padding-top: 4.4em;
+        font-size: 28pt;
+        padding-bottom: 1em;
+        font-weight: 500;
+        color: #4e4e4e;
+        animation: panin 1.5s ease-in-out;
+      }
+      
+      .sent hr {
+        width: 7em;
+        border: 1px solid #4e4e4e;
+        position: relative;
+        right: 3em;
+      
+      
+      }
+      
+      .sent p {
+        width: 450px;
+        font-size: 11.5pt;
+        line-height: 2.4;
+        padding-top: 2em;
+        animation: panup 1.5s ease-in-out;
+        margin-bottom: 2em;
+      }
+
+
+
+  @keyframes panin {
+    0% {position: relative; top: -50px; opacity: 0; transform: rotate(5deg);}
+    100% {position: relative; top: 0;}
+  }
+
+
+  @keyframes panout {
+      0% {position: relative; top: 0; }
+      100% {position: relative; top: -50px; opacity: 0; transform: rotate(5deg);}
+  }
+
+  @keyframes panup {
+    0% {position: relative; top: 20px; opacity: 0; transform: rotate(-5deg);}
+    100% {position: relative; top: 0;}
+  }
+
+
+
+
+  @media screen and (max-width: 1000px) {
+    
+      body {
+        overflow: hidden !important;
+      }
+    
+      .nav {
+        display: none;
+      }
+    
+    
+      .mobile-nav {
+        display: block;
+        margin-top: 9em;
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+      }
+    
+      .burger {
+        width: 70px;
+        display: inline-block;
+        height: 70px;
+        float: right;
+        
+      }
+    
+    
+    
+      #top {
+        width: 100%;
+        background: #4e4e4e;
+        height: 6px;
+    
+      }
+    
+      #bottom {
+        width: 100%;
+        background: #4e4e4e;
+        margin-top: 2em;
+        height: 6px;
+    
+      }
+    
+    
+      #logo {
+        font-size: 40pt;
+        position: absolute;
+      }
+    
+     
+    
+    }
+
+
+@media screen and (min-width: 1800px) {
+    
+    .form {
+        top: 30vh;
+    }
+
+    #slice {
+        right: 0;
+    }
+    
+    
+}
+    
