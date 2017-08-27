@@ -118,6 +118,7 @@
   .mobile-nav {
     display: none;
   }
+
   
   
   
@@ -465,6 +466,10 @@
 
     #slice {
         right: 0;
+    }
+
+    .sent {
+      margin-top: 15em;
     }
     
     

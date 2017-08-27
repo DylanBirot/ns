@@ -19,6 +19,13 @@
 }
 
 
+@keyframes panout {
+  0% {position: relative; top: 0; }
+  100% {position: relative; top: -50px; opacity: 0; transform: rotate(5deg);}
+}
+
+
+
 
 a:link {
   color: black;
@@ -126,7 +133,61 @@ a:visited {
 
 .mobile-nav {
   display: none;
+  position: relative;
+  z-index: 1000 !important;
 }
+
+#burger {
+  display: none;
+}
+
+input[type=checkbox]:checked {
+  background: pink;
+}
+
+
+.burger {
+  margin-top: 0.6em;
+  z-index: 10000 !important;
+}
+
+
+
+
+
+.mobile-menu {
+  z-index: 1;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:white;
+}
+
+.mobile-menu ul {
+  font-size: 60pt;
+  margin-top: 31vh;
+  margin-left: 15vw;
+}
+
+
+.mobile-menu li {
+  list-style: none;
+  font-weight: 500;
+  line-height: 3;
+}
+
+.mobile-menu a {
+  color: #4e4e4e;
+}
+
+
+
+
+
+
 
 
 
@@ -796,6 +857,7 @@ footer li {
     list-style: none;
     display: inline-block;
     width: 100%;
+    z-index: 100000 !important;
   }
 
   .burger {
@@ -803,6 +865,9 @@ footer li {
     display: inline-block;
     height: 70px;
     float: right;
+    outline: none;
+    background: none;
+    border: none;
     
   }
 
@@ -842,8 +907,7 @@ footer li {
   }
 
   .header-text h1 {
-    font-size: 50pt;
-    margin-top: 0.5em;
+    font-size: 60pt;
   }
 
   .header-text hr {
@@ -852,13 +916,13 @@ footer li {
   }
 
   .header-text p {
-    font-size: 25pt;
+    font-size: 28pt;
     width: 100%;
   }
 
   #scrolldown {
     width: 200px;
-    margin-top: 90px;
+    margin-top: 10px;
   }
 
   .left {
@@ -873,9 +937,10 @@ footer li {
 
   #design {
     position: static;
-    font-size: 180pt;
+    font-size: 270pt;
     display: block;
-    text-align: center;
+    text-align: left;
+    margin-left: -110px;
     width: 100vw;
   
   }
@@ -917,8 +982,8 @@ footer li {
   }
 
   .text-wrapper h1 {
-    font-size: 40pt;
-    padding-right: 2.5em;
+    font-size: 50pt;
+    padding-right: 2em;
     display: block;
     position: static;
   }
@@ -930,23 +995,24 @@ footer li {
   }
 
   .text-wrapper p {
-    font-size: 10pt;
+    font-size: 28pt;
     width: 75vw;
-    padding-right: 5em;
+    padding-right: 3em;
     display: block;
     position: static;
     margin-bottom: 1em;
   }
 
   .design-content a {
-    font-size: 20pt;
-    padding: 1.1em 3em;
-    margin-right: 5em;
+    font-size: 30pt;
+    padding: 1.5em 3em;
+    margin-right: 3em;
 
   }
 
   .btn {
-    max-width: 250px;
+    max-width: 450px;
+    padding-right: 0;
 }
 
 
@@ -957,6 +1023,7 @@ footer li {
   }
 
   .dev-body {
+    top: 900px;
     height: 1250px;
   }
 
