@@ -351,7 +351,7 @@ input[type=checkbox]:checked {
 .design-content {
   height: auto;
   position: relative;
-  top: 350px;
+  top: 300px;
 }
 
 .dev-body {
@@ -938,6 +938,7 @@ footer li {
   #design {
     position: static;
     font-size: 270pt;
+    font-weight: 600;
     display: block;
     text-align: left;
     margin-left: -110px;
@@ -956,7 +957,7 @@ footer li {
 
 
   .design-content img {
-    width: 80vw;
+    width: 87vw;
     display: block;
     float: none;
     margin: auto;
@@ -995,23 +996,23 @@ footer li {
   }
 
   .text-wrapper p {
-    font-size: 28pt;
+    font-size: 20pt;
     width: 75vw;
-    padding-right: 3em;
+    padding-right: 3.8em;
     display: block;
     position: static;
     margin-bottom: 1em;
   }
 
   .design-content a {
-    font-size: 30pt;
+    font-size: 25pt;
     padding: 1.5em 3em;
     margin-right: 3em;
 
   }
 
   .btn {
-    max-width: 450px;
+    max-width: 350px;
     padding-right: 0;
 }
 
@@ -1023,10 +1024,21 @@ footer li {
   }
 
   .dev-body {
+  
     top: 900px;
     height: 1250px;
   }
 
+  .dev-body .container {
+    height: 1500px;
+
+  }
+
+  .dev-content {
+    height: 1000px;
+  }
+
+  
 
   .code-tile {
     display: none;
@@ -1080,7 +1092,7 @@ footer li {
 
 
   .why-body {
-    top: 300px;
+    top: 1000px;
     width: 100vw;
   }
 

@@ -6,7 +6,39 @@
     -webkit-font-smoothing: antialiased;
   
   }
+
+
+  @keyframes pandown {
+    0% {position: relative; top: -50px; opacity: 0; transform: rotate(5deg);}
+    100% {position: relative; top: 0;}
+  }
   
+  
+  @keyframes panup {
+    0% {position: relative; top: 50px; opacity: 0; transform: rotate(-5deg);}
+    100% {position: relative; top: 0;}
+  }
+  
+  
+  @keyframes panout {
+    0% {position: relative; top: 0; }
+    100% {position: relative; top: -50px; opacity: 0; transform: rotate(5deg);}
+  }
+ 
+  @keyframes slidein {
+    0% {left: 65vw; opacity: 0;}
+    10% {left: 46vw; opacity: 0.4;}
+    100% {left: 41vw; opacity: 1;}
+  }
+
+
+  @keyframes slidein-lg {
+    0% {left: 52vw; opacity: 0;}
+    100% {left: 47vw; opacity: 1;}
+  }
+
+
+
   a:link {
     color: black;
   }
@@ -175,6 +207,7 @@
     padding-bottom: 1em;
     font-weight: 500;
     color: #4e4e4e;
+    animation: pandown 1.5s ease-in-out;
   }
   
   .header-text hr {
@@ -191,6 +224,7 @@
     font-size: 11.5pt;
     line-height: 2.4;
     padding-top: 2em;
+    animation: panup 1.5s ease-in-out;
   }
   
   #scrolldown {
@@ -211,6 +245,8 @@
     height: 110vh;
     top: -20px;
     left: 41vw;
+    animation: slidein 1s ease-in;
+    
   }
 
   .ourprocess {
@@ -813,6 +849,7 @@ footer {
       #carousel {
         height: 1000px;
         left: 47vw;
+        animation: slidein-lg 1s ease-in;
       }
     
       .header-text {
